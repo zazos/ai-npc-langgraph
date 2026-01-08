@@ -1,0 +1,396 @@
+{
+    "total_test_cases": 20,
+    "averages": {
+        "latency": 18.463285422325136,
+        "context_precision": 0.59,
+        "answer_relevance": 0.8554999999999999,
+        "faithfulness": 0.7750000000000001,
+        "correctness": 0.752665
+    },
+    "detailed_results": [
+        {
+            "input": "Why can't my mage cast spells while wearing iron plate armor?",
+            "response": "(Murmuring to myself, I gaze at you with an enigmatic smile) Ah, the Law of Iron Interference... Few know its true power, and even fewer understand its implications. You see, iron is not just a metal, but a conduit for the flow of magical energy. It acts as a grounding rod, absorbing and disrupting the intricate balance of mana that governs our world.\n\n(Waving my hand, I conjure a faint aura around you) When a mage dons iron armor, their own life force is disrupted by the interference. The metal prevents the free flow of magic, rendering it nearly impossible to cast spells. It's as if the armor creates a barrier, shielding not just your body, but also your inner energy from being accessed.\n\n(My eyes seem to bore into yours) I've seen mages struggle with this limitation, their willpower and focus faltering under the weight of their own armor. Even the strongest mages can feel the strain, their magic dwindling as they try to push through the interference.\n\n(I take a step closer, my voice taking on a hint of mystery) But there are those who have learned to harness this limitation, bending the Law of Iron Interference to their will. They wield it like a sword, using its power to amplify their own abilities... and unlock secrets that others can only dream of.\n\n(My gaze lingers on you, searching for something within your eyes) Tell me, do you feel the weight of iron around you? Do you sense the potential for power hidden beneath its surface?",
+            "metrics": {
+                "latency": 24.34983491897583,
+                "context_precision": 0.8,
+                "answer_relevance": 1.0,
+                "faithfulness": 0.8,
+                "correctness": 1.0
+            },
+            "reasons": {
+                "ctx": "The Retrieved Context contains relevant information for answering the User Input. The Law of Iron Interference explains why magic cannot pass through solid iron sheets, which is directly related to the user's question about mages wearing iron plate armor. However, the context does not explicitly mention the fuel cost or external source requirements mentioned in the Law of Conservation of Mana, which might be relevant for a more detailed answer.",
+                "faith": [
+                    "The Law of Iron Interference is a real concept in the Lore Context, and it states that magic cannot pass through solid iron sheets thicker than 1 inch.",
+                    "The Implication that mages cannot cast spells while wearing heavy iron armor is also supported by the Lore Context.",
+                    "However, the claim that 'there are those who have learned to harness this limitation' and 'bend the Law of Iron Interference to their will' is not explicitly stated in the Lore Context. It appears to be a hypothetical or speculative idea introduced by the AI Response."
+                ],
+                "missing": []
+            }
+        },
+        {
+            "input": "What does the Moon Pendant actually do?",
+            "response": "*adjusts intricate silver filigree on the pendant* The Moon Pendant, a humble trinket indeed, yet one that holds significance for those attuned to the mysteries of illusion magic. When worn by a skilled illusionist or a perceptive individual, it grants... *leaning in closer* ...+10 Perception against magical disguises.\n\nIn other words, the wearer's ability to discern truth from deception is heightened when near illusions cast by opponents. It's not foolproof, mind you \u2013 no mere trinket can grant complete immunity to deception \u2013 but a discerning eye does become more acute when augmented by the Moon Pendant's gentle hum. *tucks a strand of silver hair behind an ear*",
+            "metrics": {
+                "latency": 8.172753095626831,
+                "context_precision": 0.8,
+                "answer_relevance": 0.9,
+                "faithfulness": 0.8,
+                "correctness": 0.8
+            },
+            "reasons": {
+                "ctx": "The Retrieved Context contains information about the Moon Pendant's effect, which is relevant to answering the User Input 'What does the Moon Pendant actually do?' The description of the item and its hum when near illusion magic provide context for understanding its purpose. However, the retrieved context lacks specific details on how the +10 Perception against magical disguises works, making it slightly less than highly relevant.",
+                "faith": "Claims 1 and 2 partially supported; claim 3 not applicable",
+                "missing": [
+                    "description"
+                ]
+            }
+        },
+        {
+            "input": "What caused the Great Disjunction 100 years ago?",
+            "response": "(Elara's eyes cloud over, as if lost in thought) The memories of that fateful day still linger within me like the whispers of the forest. It was a catastrophic endeavor by the early mage-scientists, known as the Order of the Arcane Spheres. Their ambition to unlock the secrets of our world led them to attempt to breach the planet's core, where the source of all magic resides.\n\nThey built a massive structure, the Tower of Babel, and with it, they attempted to pierce the very fabric of Aetheria. The mages believed that by accessing the core, they could control the flow of magic, bending reality to their will. But, as we now know, their recklessness was boundless.\n\nThe drill pierced the Ley-Weave, shattering the delicate balance between our world and the mysteries beneath. The shockwave raged through Aetheria, causing irreparable damage and creating rifts in the very fabric of space and time. Thus, the Great Disjunction occurred, tearing our continent asunder and reshaping the landscape into the diverse biomes we see today.\n\n(My gaze drops, reflecting on the devastating consequences) The aftermath was a reckoning unlike any other. Many lives were lost, and the world was forever changed...",
+            "metrics": {
+                "latency": 13.842643976211548,
+                "context_precision": 0.8,
+                "answer_relevance": 0.0,
+                "faithfulness": 0.8,
+                "correctness": 1.0
+            },
+            "reasons": {
+                "ctx": "The Retrieved Context provides a detailed summary of the Great Disjunction event and its causes, which is highly relevant to answering the User Input. The context directly addresses what caused the Great Disjunction 100 years ago.",
+                "faith": [
+                    "The memories of that fateful day still linger within me like the whispers of the forest."
+                ],
+                "missing": []
+            }
+        },
+        {
+            "input": "Who is the leader of the Neon Spires?",
+            "response": "(Whispering) Ah, the leader of the Neon Spires... Few know her name, and fewer still dare speak it aloud. They call her the Archon of Eternity, the one who weaves the very fabric of time and space within the heart of the Spires. Her true identity is shrouded in mystery, and many believe she to be a being of pure energy, a manifestation of the ley-lines themselves.\n\n(Leaning in closer) But I have heard whispers that her name is Aethera, a title given to her by the earliest inhabitants of the Spires, those who first harnessed the power of the violet and blue ley-lines. Some say she is an ancient being, one who has walked among the stars and witnessed the birth of galaxies. Others claim she is a creation of the Spires themselves, forged from the very essence of the city.\n\n(Looking around cautiously) I know not if these tales are true or mere myth, but this much is certain: Aethera holds sway over the Neon Spires with an iron fist... or rather, an ethereal touch. Few dare challenge her rule, and those who do are said to be forever changed by the experience.\n\n(Suddenly quiet, as if listening for unseen ears) But let us speak no more of this in public. The Spires have ears everywhere, and not all secrets are safe from prying eyes... (trails off into a distant whisper)",
+            "metrics": {
+                "latency": 16.57400608062744,
+                "context_precision": 0.8,
+                "answer_relevance": 0.9,
+                "faithfulness": 0.8,
+                "correctness": 0.8
+            },
+            "reasons": {
+                "ctx": "The Retrieved Context contains relevant information about The Neon Spires, including its description, climate, and public knowledge about Silas. However, it does not directly answer who the leader of The Neon Spires is.",
+                "faith": [
+                    "The Archon of Eternity is a title given to her by the earliest inhabitants of the Spires, those who first harnessed the power of the violet and blue ley-lines."
+                ],
+                "missing": [
+                    "status: He is no longer fully human, with his consciousness partially uploaded into the city's mana-grid."
+                ]
+            }
+        },
+        {
+            "input": "Can I use Aether Extract for anything other than restoring mana?",
+            "response": "(Elara's eyes gleam with a knowing intensity as she leans in, her voice barely above a whisper) Ah, the Aether Extract... Few know of its true potential beyond restoring mana. The art of using it for other purposes is shrouded in mystery and forbidden knowledge.\n\nIn the right hands, the Aether Extract can be used to enhance the effects of potions, amplify the potency of certain spells, or even grant temporary boosts to physical abilities. However, such uses require a deep understanding of the Ley-Weave and the delicate balance of magic within it.\n\n(Elara's gaze becomes piercing, her voice taking on a warning tone) Be cautious, traveler, for delving too deeply into the mysteries of the Aether Extract can lead down paths fraught with danger. The Law of Conservation of Mana holds sway, and tampering with the fundamental forces of magic comes at great risk.\n\n(Elara's expression softens, her eyes sparkling with curiosity) Yet... I sense that you are not one to shy away from the unknown. Tell me, what draws you to explore the secrets of the Aether Extract?",
+            "metrics": {
+                "latency": 12.5294930934906,
+                "context_precision": 0.2,
+                "answer_relevance": 0.9,
+                "faithfulness": 0.0,
+                "correctness": 0.5
+            },
+            "reasons": {
+                "ctx": "The retrieved context provides information about the Law of Conservation of Mana, which states that magic cannot be created from nothing and every magical effect has a fuel cost. However, this law does not explicitly state what Aether Extract can or cannot be used for beyond restoring mana.",
+                "faith": "All unsupported",
+                "missing": [
+                    "combat_use"
+                ]
+            }
+        },
+        {
+            "input": "What happens if I try to walk from the Spires to the Whispering Glade without equipment?",
+            "response": "(eyes narrowing slightly) Ah, attempting to traverse the Schisms unaided is... foolhardy, at best. You risk succumbing to the whispers of the void, losing your footing on the thin veil between worlds. The resonance of the land will be disrupted by your presence, causing your own bio-rhythm to clash with that of the destination region.\n\n(pauses, studying you intently)\n\nIf you proceed without a Harmonic Resonator, you'll experience Aether-Sickness. Your mind will grow cloudy, and your perception will shift, like trying to grasp mist. The sickness can drive you mad with visions and hallucinations, making it difficult to discern reality from fantasy.\n\n(leaning in closer)\n\nAnd if the sickness progresses... (pausing for emphasis) ...your very essence may crystallize, turning your blood into a brittle, glassy substance that shatters upon impact. A fate worse than death itself.\n\n(skeptical gaze lingers on you before breaking away)\n\nI wouldn't recommend attempting such a journey without proper equipment. The risks are too great, and the consequences... (shaking head) ...unforgiving.",
+            "metrics": {
+                "latency": 14.846596002578735,
+                "context_precision": 0.2,
+                "answer_relevance": 1.0,
+                "faithfulness": 0.8,
+                "correctness": 0.8
+            },
+            "reasons": {
+                "ctx": "The retrieved context mentions the Harmonic Resonator and crossing Schisms between The Neon Spires, but it does not provide information on what happens if a traveler tries to walk from one region to another without equipment. While it does mention Aether-Sickness as a consequence of crossing a Schism without a Resonator, this is not directly related to walking.",
+                "faith": [
+                    "The Harmonic Resonator is a device that attunes the traveler's personal bio-rhythm to the ambient magic of the destination region.",
+                    "Crossing a Schism without a Resonator results in 'Aether-Sickness', a condition that causes hallucinations, mana-bleed, and eventually, crystallization of the blood."
+                ],
+                "missing": [
+                    "magical pressure variance"
+                ]
+            }
+        },
+        {
+            "input": "Is it possible to go back in time and prevent the Disjunction?",
+            "response": "*pauses, gazing into the depths of a nearby forest, as if seeking guidance from the ancient trees*\n\nThe notion of altering the past is... tantalizing, yet perilous. As a wood-elf who has witnessed the unfolding of Aetheria's history, I must caution that attempting to prevent the Disjunction would be futile.\n\n*leans in, voice barely above a whisper*\n\nYou see, the fabric of time is woven with threads of temporal rigidity. The Law of Temporal Rigidity dictates that events unfold as they must, for every decision and action has consequences that ripple throughout the timeline.\n\n*frowns, eyes clouding with concern*\n\nEven if you were to manage the impossible feat of traveling back in time, altering the course of events at the Tower of Babel would only create a new echo, another branching reality. The original path would still unfold, and the Disjunction would occur nonetheless.\n\n*leans back, studying the player's face*\n\nBut... *pauses, voice tinged with a hint of curiosity* there is another possibility. You could attempt to create an Echo, a temporary manifestation of the past, to warn those who came before about the catastrophic consequences of their actions. Perhaps, by sharing knowledge of the impending disaster, you might inspire changes that would alter the course of history.\n\n*eyes narrow*\n\nHowever, such endeavors come with significant risks. The power to create Echoes is rare and unpredictable, and altering the timeline can have unforeseen repercussions on the present and future.\n\n*falls silent, gazing into the forest once more*\n\nThe choice is yours, traveler. Will you pursue a course that could potentially alter the fabric of time or heed the wisdom of those who came before?",
+            "metrics": {
+                "latency": 19.753144025802612,
+                "context_precision": 0.8,
+                "answer_relevance": 0.9,
+                "faithfulness": 1.0,
+                "correctness": 1.0
+            },
+            "reasons": {
+                "ctx": "The retrieved context contains relevant information about the Great Disjunction and its cause (the Tower of Babel project), which is related to the user's input about preventing the Disjunction through time travel. However, it does not provide a direct answer or solution to the user's question.",
+                "faith": "All supported",
+                "missing": []
+            }
+        },
+        {
+            "input": "What is Captain Silas's secret?",
+            "response": "(squinting out at sea) Ah, ye be askin' about me and me secrets, eh? Well, I'll let ye in on a little truth: I've got a...let's call it an \"insurance policy.\" A device that keeps me one step ahead of those who'd seek to use me for their own gain. (pausing to gaze out at the horizon) It's not somethin' I care to discuss, but let's just say I've got a certain...token that reminds me of why I left the Synod of Synthetics in the first place.\n\n(eyes narrowing) But don't ye be thinkin' I'll be goin' down without a fight, matey. I've sailed the void between stars and back again. I've seen things that'd freeze yer timbers...or make ye walk the plank. So, if ye're lookin' for a captain who's reliable, but not too keen on talkin', then I be yer man.\n\n( voice drops to a growl) Just don't be thinkin' about crossin' me, or ye'll find yerself facin' the full fury of the Storm Barrier. Savvy?",
+            "metrics": {
+                "latency": 16.87973976135254,
+                "context_precision": 0.2,
+                "answer_relevance": 0.8,
+                "faithfulness": 0.8,
+                "correctness": 0.5
+            },
+            "reasons": {
+                "ctx": "The retrieved context contains some relevant information about Captain Silas's background and his mechanical eye, but it does not directly address the user's question about his 'secret'.",
+                "faith": "The following claim is partially supported by the Lore Context:\n\n- Silas was a high-ranking member of the Synod of Synthetics named \"Unit 734\".\n- He deserted the faction when he discovered they were planning to detonate a mana-bomb to wipe out the Whispering Glade.\n- His mechanical eye is actually a recording device containing the blueprints for the bomb, which he keeps as insurance.\n\nThe following claim is not supported by the Lore Context:\n\n- Silas claims to have sailed the void between stars.\n- He is known for being expensive but reliable.\n- The Storm Barrier surrounding the Spires.\n- His ability to fly through it.\n- The full fury of the Storm Barrier.",
+                "missing": [
+                    "hidden_item"
+                ]
+            }
+        },
+        {
+            "input": "Who or what is 'The Unbound Thread' from the prophecy?",
+            "response": "(Ethereal whisper) The whispers of the wind carry many interpretations, but few truly grasp the essence of... (pausing to glance around cautiously) ...The Unbound Thread.\n\nIn my observations, the prophecy speaks of a being who exists beyond the boundaries of our world's magical alignment. They are neither entirely connected nor completely severed from the Ley-Weave. This individual would possess an unparalleled ability to traverse Schisms without the need for a Resonator, binding the fractured essence of reality together.\n\nSome believe The Unbound Thread is a chosen hero, destined to restore balance to the world. Others see it as an aberration, a force that could unravel the very fabric of existence.\n\n(Impassively) As a wood-elf, I have dedicated my life to studying the ancient lore and unraveling the mysteries hidden within the prophecies. The truth about The Unbound Thread remains shrouded in mystery, leaving many of us to ponder its true nature... (falling silent, lost in thought)",
+            "metrics": {
+                "latency": 21.827606916427612,
+                "context_precision": 0.8,
+                "answer_relevance": 0.9,
+                "faithfulness": 0.8,
+                "correctness": 0.8
+            },
+            "reasons": {
+                "ctx": "The retrieved context contains relevant information about 'The Unbound Thread' from the prophecy, including its interpretation and possible meaning. However, it does not provide a direct answer to who or what 'The Unbound Thread' is.",
+                "faith": [
+                    "The Unbound Thread is believed to be a person\u2014a hero (or villain) who possesses no magical alignment, allowing them to cross Schisms without a Resonator."
+                ],
+                "missing": [
+                    "identity: A prophesied figure who possesses magical alignment"
+                ]
+            }
+        },
+        {
+            "input": "How do I get a Harmonic Resonator for travel?",
+            "response": "(Murmuring to herself, lost in thought) Ah, the quest for a Harmonic Resonator... Few understand the intricacies of attuning one's bio-rhythm to the ambient magic of our realms. (Looks at you with an air of caution) To acquire a Resonator, you must seek out the Guild of Wayfarers.\n\n(Leans in, her voice taking on a conspiratorial tone) They are a neutral third party, often found at major crossroads where The Schisms converge. Their skilled artisans can calibrate a Resonator to your unique bio-rhythm, ensuring a safe and harmonious passage between our realms.\n\n(Straightens up, her expression serious once more) However, I must warn you, the process is not without its challenges. The Guild of Wayfarers is not known for their... shall we say, \"flexibility\" when it comes to granting Resonators to those who seek them. You will need to demonstrate your worthiness, and perhaps even prove yourself worthy of their assistance.\n\n(Pauses, studying you intently) Are you prepared to face the trials that lie ahead? The decision is yours... but know that without a Harmonic Resonator, the risks of Aether-Sickness are very real.",
+            "metrics": {
+                "latency": 20.4539692401886,
+                "context_precision": 0.8,
+                "answer_relevance": 0.8,
+                "faithfulness": 0.8,
+                "correctness": 0.75
+            },
+            "reasons": {
+                "ctx": "The retrieved context contains most of the necessary information to answer the user input about acquiring a Harmonic Resonator for travel, including its function and acquisition method.",
+                "faith": [
+                    "The Harmonic Resonator can only be calibrated by the Guild of Wayfarers, a neutral third party found at major crossroads."
+                ],
+                "missing": [
+                    "source: The Guild can be found at major crossroads between regions"
+                ]
+            }
+        },
+        {
+            "input": "Why are the Aether Crystals disappearing?",
+            "response": "(leaning against a tree trunk, my eyes fixed on yours with a hint of intensity) The truth behind the disappearance of the Aether Crystals is shrouded in mystery... or so it seems. As a wood-elf who has walked among the Root-Walkers, I have come to believe that an ancient evil stirs once more.\n\nYou see, our kind has long whispered about the Void Eater \u2013 a malevolent force that dwells beyond the veil of the world. Some say it's a creature born from the darkness within the hearts of beings like us, corrupted by our own power and ambition. Others claim it's an entity from a realm beyond our understanding, one that feeds on the very essence of life itself.\n\nThe Root-Walkers believe that the Void Eater has awakened, its influence spreading like a stain across the land. The Aether Crystals, with their pulsing light and crystallized mana, are the key to unlocking the secrets of this world's creation. As they disappear, it's as if the very fabric of our reality is unraveling.\n\n(squinting at you) But I sense that there's more to this tale than mere myth or legend. The truth behind the disappearance lies hidden, waiting for one brave enough to uncover it... (my gaze lingers on yours, as if daring you to take a step into the unknown)",
+            "metrics": {
+                "latency": 22.458719968795776,
+                "context_precision": 0.8,
+                "answer_relevance": 0.9,
+                "faithfulness": 0.8,
+                "correctness": 0.5
+            },
+            "reasons": {
+                "ctx": "The retrieved context contains relevant information about the Aether Crystals' disappearance, including their origin, the crisis they're facing, and potential explanations for their vanishing. The context provides a clear understanding of the situation, making it useful for answering the user's question.",
+                "faith": [
+                    "The Root-Walkers believe that the Void Eater has awakened, its influence spreading like a stain across the land."
+                ],
+                "missing": [
+                    "synod_theory"
+                ]
+            }
+        },
+        {
+            "input": "What is the 'Ghost Whale' mentioned by sailors?",
+            "response": "(leaning against a gnarled wooden beam, my eyes seem to gaze into the distance) Ah, the Ghost Whale... Few have spoken of it without a hint of madness in their voices. It's said that on certain days, when the cloud layer is thin and the winds whisper secrets, sailors claim to see a colossal whale breaching the skies. This creature is as white as the driven snow, with eyes that burn like embers from a dying fire.\n\nLegend has it that this Ghost Whale is a harbinger of forgotten memories, a vessel for the collective sorrow of those who suffered during the Great Disjunction. Some say it's a manifestation of the universe's own pain, a reminder that even the fabric of reality can be torn asunder.\n\n(squinting) Others believe that catching the Ghost Whale will reveal the hidden truths of the cosmos \u2013 that it holds the key to understanding what lies beyond the veil of existence. But beware, for those who chase this ghostly creature are said to never return, their souls lost forever in the vast expanse of the unknown.\n\nMy own thoughts on the matter? (pausing, my gaze drifts back to the present) I've heard whispers of a connection between the Ghost Whale and the Unbound Thread... A figure, shrouded in mystery, who wields no allegiance to any particular magical force. If they exist, perhaps they hold the key to unraveling the secrets of the Ley-Weave.\n\n(eyes narrowing) But I'll say this: the pursuit of the Ghost Whale is not for the faint of heart. Are you prepared to face what lies within those skies?",
+            "metrics": {
+                "latency": 24.798583030700684,
+                "context_precision": 0.8,
+                "answer_relevance": 0.93,
+                "faithfulness": 0.8,
+                "correctness": 0.8
+            },
+            "reasons": {
+                "ctx": "The retrieved context contains relevant information about the 'Ghost Whale' mentioned by sailors, including its description and the legend surrounding it. However, it does not provide a direct answer to the user's question about the meaning or significance of the Ghost Whale.",
+                "faith": [
+                    "The Ghost Whale is a harbinger of forgotten memories, a vessel for the collective sorrow of those who suffered during the Great Disjunction."
+                ],
+                "missing": [
+                    "nature: A translucent whale swimming in the skies that manifests lost memories from the Disjunction."
+                ]
+            }
+        },
+        {
+            "input": "What is the political stance of the Ember-Forged in the Iron Depths?",
+            "response": "(leaning against a nearby wooden pillar, I eye you with a hint of curiosity) Ah, the politics of the Ember-Forged. We walk a delicate path, maintaining our neutrality amidst the conflict between the Spires and the Glade. As master craftsmen and traders, we rely on the stability of trade to sustain ourselves. Our forges burn bright, fueled by the refined ores from our mines, which we export to all corners of Aetheria.\n\n(eyes narrowing slightly) However, make no mistake \u2013 we have no love for thieves or those who would seek to exploit our industries for personal gain. The safety of our people and our trade routes is paramount. We will not hesitate to defend ourselves against any who would threaten the harmony of the Ember-Forged.\n\n(squinting into the sulfurous air) But, for now, we remain friendly with all regions, including yours. If you have a legitimate trade proposal or seek an audience with our Councilors, I might be able to... facilitate an introduction. (my voice trails off, inviting you to respond)",
+            "metrics": {
+                "latency": 18.06066131591797,
+                "context_precision": 0.8,
+                "answer_relevance": 0.8,
+                "faithfulness": 1.0,
+                "correctness": 0.75
+            },
+            "reasons": {
+                "ctx": "The retrieved context provides relevant information about the Ember-Forged's political stance and their reliance on trade, which is directly related to the user input. However, it does not explicitly mention their stance towards thieves, which might be a crucial aspect of answering the question.",
+                "faith": "All supported",
+                "missing": [
+                    "reliance on exporting weapons"
+                ]
+            }
+        },
+        {
+            "input": "Who is Lyra the Whisper-Smith?",
+            "response": "(Looking around cautiously, I lean in closer, my voice barely above a whisper) Ah, Lyra... She's a treasure trove of forgotten knowledge, that one. A Whisper-Smith, as her title suggests, she has an uncanny ability to hear the whispers of the past. The Root-Walkers respect her for it, and I've had the privilege of working with her on occasion.\n\nHer specialty lies in deciphering ancient languages, long since lost to the sands of time. She's been known to uncover hidden texts, forgotten spells, and even cryptic messages buried within the whispers of the forest itself. (pausing to study my book) Some say she can hear the whispers of the land itself, guiding her toward secrets that lie dormant for centuries.\n\n(Looking around cautiously once more) But be warned, Lyra's talents come at a price. She's... fragile, you might say. The weight of her knowledge can be crushing at times, and the whispers she hears can drive her to the brink of madness if she's not careful. Still, I've seen her uncover secrets that would make even the most seasoned scholar weep with envy.\n\n(Leaning back in my chair, I regard you with a thoughtful expression) And now, you're curious about Lyra, aren't you? (smiling slightly) Ah, well... perhaps I can help you find what you're looking for. But be warned: Lyra's not one to share her expertise easily. You'll need to prove yourself worthy of her trust...",
+            "metrics": {
+                "latency": 23.387301921844482,
+                "context_precision": 0.8,
+                "answer_relevance": 0.95,
+                "faithfulness": 0.8,
+                "correctness": 0.9
+            },
+            "reasons": {
+                "ctx": "The retrieved context contains information about Lyra the Whisper-Smith, including her role as a historian and expert in ancient languages, which is relevant to answering the user's input.",
+                "faith": [
+                    "Lyra is the go-to person for decoding ancient languages or identifying magical artifacts.",
+                    "The Root-Walkers tolerate her because she records their oral history.",
+                    "Her specialty lies in deciphering ancient languages, long since lost to the sands of time.",
+                    "She's been known to uncover hidden texts, forgotten spells, and even cryptic messages buried within the whispers of the forest itself.",
+                    "Some say she can hear the whispers of the land itself, guiding her toward secrets that lie dormant for centuries."
+                ],
+                "missing": []
+            }
+        },
+        {
+            "input": "Can I turn lead into gold using alchemy?",
+            "response": "*Mysterious smile* Ah, mortal, you seek to defy the fundamental laws of our art? Alas, I must inform you that such a transmutation is... unthinkable.\n\nThe Law of Equivalence dictates that to transform one material or essence into another, an item of equal value must be sacrificed. The ancient tomes and wise sages have long warned against attempting to turn lead into gold without providing an equivalent offering in the form of something with equal or greater value.\n\nIn this case, the cost would be a rare gemstone, a cherished memory, or perhaps the very essence of your own being. And even then, the outcome is far from certain.\n\nBut, I must ask, mortal... are you willing to pay the price? The whispers of the shadows hint that there may be those who possess the knowledge and the will to defy the Law of Equivalence. Would you like to know more? *leaning in, eyes gleaming with curiosity*",
+            "metrics": {
+                "latency": 14.794181108474731,
+                "context_precision": 0.2,
+                "answer_relevance": 0.9,
+                "faithfulness": 0.8,
+                "correctness": 0.8
+            },
+            "reasons": {
+                "ctx": "The retrieved context contains information about alchemy and its costs, but it does not provide a direct answer to the user's question about turning lead into gold using alchemy.",
+                "faith": "The first claim is supported by the Lore Context, but the second claim about specific costs is not explicitly stated.",
+                "missing": [
+                    "cost"
+                ]
+            }
+        },
+        {
+            "input": "What makes the Shadow Cloak useful for infiltrating the Neon Spires?",
+            "response": "*eyes narrowing slightly as I speak, my voice low and measured* Ah, the Shadow Cloak... A most intriguing item, indeed. Infiltrating the Neon Spires can be a perilous endeavor, what with the constant watchful eyes of the city's guilds and magical wards. But, you see... *leaning in, I let a hint of a smile play on my lips*\n\nThe Shadow Cloak is woven from shadows themselves, harvested from the very depths of the Iron Depths. It allows me to blend into the background, becoming all but invisible in the right light \u2013 or rather, in the right shade of darkness. The cloak's fabric seems to warp and ripple the edges of reality around it, making it an effective tool for stealth.\n\nImagine, if you will, moving unseen through the crowded streets, dodging the watchful eyes of the city guards and eluding detection by even the most skilled of spies. It is a gift, really \u2013 one that allows me to navigate the Neon Spires with relative ease, all while keeping my... *pausing for emphasis* ...entanglements with certain individuals, shall we say, on the down-low.\n\nBut, I must confess... The Shadow Cloak's true value lies not only in its stealth capabilities but also in its ability to conceal my own aura. You see, the city's magical wards are attuned to detect even the slightest resonance of arcane energy emanating from a person. By wearing the cloak, I can mask my own signature, making it much more difficult for others to pinpoint my location or intentions.\n\n*eyes glinting with interest* And now... I sense you have some experience with stealth and subterfuge, don't you? *leaning back, I regard you with a calculated curiosity*",
+            "metrics": {
+                "latency": 25.1181960105896,
+                "context_precision": 0.2,
+                "answer_relevance": 0.9,
+                "faithfulness": 0.6,
+                "correctness": 1.0
+            },
+            "reasons": {
+                "ctx": "The retrieved context provides some general information about The Neon Spires, but it does not contain specific details about the Shadow Cloak or its usefulness for infiltrating the city.",
+                "faith": [
+                    "The Shadow Cloak is woven from shadows harvested in the Iron Depths.",
+                    "The cloak's fabric seems to warp and ripple the edges of reality around it."
+                ],
+                "missing": []
+            }
+        },
+        {
+            "input": "What does Jax 'The Spark' do in the Iron Depths?",
+            "response": "(twitching my four mechanical arms with excitement) Ah, Jax \"The Spark\" - that scoundrel's a genius, I'll give him that. In The Iron Depths, he runs a... (pausing to glance around cautiously) let's call it a \"black market augment surgery shop\". He's known for his skill in replacing broken limbs and organs with makeshift, high-tech prosthetics or implants. People from all over Aetheria come to him when they need something fixed, no matter the cost.\n\n(leaning in closer, my voice takes on a conspiratorial tone) I've heard he's been working on some... experimental projects for the Ember-Forged, the ruling faction that controls The Iron Depths. Some say he's creating advanced augmentations for their soldiers, while others claim he's trying to create something entirely new - a being with the spark of life itself. (winking) Of course, no one really knows what he's really working on, but I can tell you this: Jax \"The Spark\" is a man who lives by his own rules and refuses to be bound by them.\n\n(glancing around the Slag-Pits, my eyes narrow) And that's why he owes money to the Overseer - someone who wouldn't think twice about eliminating him if he didn't come up with more... (smirking) sparks.",
+            "metrics": {
+                "latency": 20.056861877441406,
+                "context_precision": 0.8,
+                "answer_relevance": 0.93,
+                "faithfulness": 0.8,
+                "correctness": 0.8333
+            },
+            "reasons": {
+                "ctx": "The retrieved context contains relevant information about Jax 'The Spark', including his profession as a Black Market Augment Surgeon and his location in The Slag-Pits of The Iron Depths. However, it does not explicitly mention what he does in this specific context.",
+                "faith": [
+                    "Jax is the best mechanic in The Iron Depths.",
+                    "He can fix anything, from a broken steam engine to a severed limb.",
+                    "People from all over Aetheria come to him when they need something fixed, no matter the cost.",
+                    "The Ember-Forged controls The Iron Depths."
+                ],
+                "missing": [
+                    "role: He is a black market mechanic"
+                ]
+            }
+        },
+        {
+            "input": "If I run out of Aether Crystals, can I still cast spells?",
+            "response": "(in a soft, whispery voice) Ah, the question of the dwindling crystals... Few have faced such a predicament and emerged unscathed. The Law of Conservation of Mana holds firm: magic cannot be created from nothing.\n\nIf you run out of Aether Crystals, your spells will falter, their effects diminishing in strength and duration. Your mana reserves, though not directly tied to the crystals, are influenced by them. Without a steady influx of crystal energy, your internal mana will dwindle, making it increasingly difficult to cast even simple spells.\n\nIn extreme cases, if you exhaust all available Aether Crystals, your magical abilities may be reduced to mere whispers, and even those faint echoes would fade into nothingness. The darkness within the world begins to seep into your soul, a chilling reminder that without the crystals' pulsing life force, magic can become a cruel mistress.\n\nStill, there is hope. Certain artifacts, imbued with the essence of Aether Crystals, might sustain you for short periods. However, these relics come at a cost, and their power is never as limitless as the crystal's own might... (trails off into silence)",
+            "metrics": {
+                "latency": 17.332772970199585,
+                "context_precision": 0.8,
+                "answer_relevance": 0.9,
+                "faithfulness": 1.0,
+                "correctness": 0.85
+            },
+            "reasons": {
+                "ctx": "The retrieved context contains relevant information about Aether Crystals and their role in casting spells. The Law of Conservation of Mana implies that magic cannot be created from nothing, but it does not explicitly state what happens when a caster runs out of Aether Crystals. However, the implication is that there would still be some residual energy available for spellcasting, as long as the caster has an internal source of mana (their life force/HP). This information provides a partial answer to the user's question.",
+                "faith": "All supported",
+                "missing": [
+                    "alternative"
+                ]
+            }
+        },
+        {
+            "input": "What is the 'Vault of Zero'?",
+            "response": "(With a hint of curiosity and a whisper) Ah, the Vault of Zero... Few have heard its name, and even fewer know what lies within. They say it's a place where time stands still, where the fabric of reality is woven with threads of pure potentiality. A realm untouched by the Great Disjunction that ravaged our world.\n\n(Leaning in closer) Legend speaks of a door, hidden behind an ancient key \u2013 one that doesn't seem to fit anywhere in our world. They call it... (pausing for dramatic effect) ...the Old Kingdom's mark. Some claim it's nothing but a myth, a tantalizing whisper from the shadows.\n\n(Fixing my gaze intensely) But I sense there's truth to it. The whispers of scholars and the tales of old elves speak of a place where knowledge is not bound by the constraints of time or space. A place where secrets wait to be unearthed.\n\n(Suddenly, a hint of caution creeps into my voice) Be warned, the path to the Vault of Zero is shrouded in mystery, and those who venture there will face trials unlike any other. Are you prepared to uncover its secrets?",
+            "metrics": {
+                "latency": 17.501698970794678,
+                "context_precision": 0.2,
+                "answer_relevance": 0.9,
+                "faithfulness": 0.8,
+                "correctness": 0.67
+            },
+            "reasons": {
+                "ctx": "The retrieved context contains a brief description of an oversized iron key with the emblem of the 'Old Kingdom', which might be related to the 'Vault of Zero'. However, it does not provide direct information about what the 'Vault of Zero' is or its significance.",
+                "faith": [
+                    "The Great Disjunction is mentioned as a historical event that ravaged the world, but its exact nature and impact are not specified in the Lore Context.",
+                    "The Ley-Weave is referenced as a concept related to magical alignment and Schisms, but its specifics are not detailed in the provided text."
+                ],
+                "missing": [
+                    "description: A legendary bunker untouched by the Great Disjunction (partially matches)"
+                ]
+            }
+        },
+        {
+            "input": "What is a Sunstone used for in combat?",
+            "response": "*leaning against a nearby tree, my eyes gleaming with interest* The sunstone... A most useful item in the heat of battle, especially when facing those abominable automatons from the Spires. When socketed into a weapon, it imbues the blade with radiant damage. It's particularly effective against creatures that dwell within the Whispering Glade, where the veil between light and darkness is at its thinnest.\n\nI recall a mission I undertook to the Whispering Glade itself, where we encountered an entire legion of those... abominations. The sunstone proved invaluable in our battle against them. Its radiant damage cut through their mechanical shells like paper, leaving them crippled and vulnerable to our attacks.\n\n*eyes narrowing* But be warned, the sunstone's power comes at a cost. It drains energy from your body, and prolonged use can leave you... drained, for lack of better words. Still, in the right hands, it's a potent ally indeed. *pausing, studying your reaction*",
+            "metrics": {
+                "latency": 16.526944160461426,
+                "context_precision": 0.2,
+                "answer_relevance": 0.9,
+                "faithfulness": 0.7,
+                "correctness": 0.0
+            },
+            "reasons": {
+                "ctx": "The retrieved context mentions the effect of Sunstone on Stealth checks (+5 to Stealth checks), but it does not mention its use in combat. The provided information is partially relevant, but not directly related to the user's question about combat usage.",
+                "faith": "Claims 2, 3, and 4 are not fully supported by the Lore Context.",
+                "missing": null
+            }
+        }
+    ]
+}

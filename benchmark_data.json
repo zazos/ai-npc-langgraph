@@ -1,0 +1,142 @@
+[
+    {
+        "player_input": "Why can't my mage cast spells while wearing iron plate armor?",
+        "expected_lore_facts": {
+            "rule": "The Law of Iron Interference states that magic cannot pass through solid iron sheets thicker than 1 inch.",
+            "implication": "Iron acts as a magical grounding rod, making it impossible for mages to cast while encased in it."
+        }
+    },
+    {
+        "player_input": "What does the Moon Pendant actually do?",
+        "expected_lore_facts": {
+            "description": "It is a silver necklace holding a luminescent stone shard that hums near illusion magic.",
+            "effect": "It grants the wearer +10 Perception against magical disguises."
+        }
+    },
+    {
+        "player_input": "What caused the Great Disjunction 100 years ago?",
+        "expected_lore_facts": {
+            "event": "It was triggered by the 'Tower of Babel' project.",
+            "cause": "Mage-scientists attempted to drill into the planet's core to access the source of magic, shattering the planetary Ley-Weave."
+        }
+    },
+    {
+        "player_input": "Who is the leader of the Neon Spires?",
+        "expected_lore_facts": {
+            "leader": "Grand Architect Vex leads the Synod of Synthetics.",
+            "status": "He is no longer fully human, with his consciousness partially uploaded into the city's mana-grid."
+        }
+    },
+    {
+        "player_input": "Can I use Aether Extract for anything other than restoring mana?",
+        "expected_lore_facts": {
+            "combat_use": "If thrown, it explodes for 40 Arcane Damage in a 5ft radius.",
+            "side_effect": "While it restores 50 Mana, it also causes 10 HP damage due to toxicity."
+        }
+    },
+    {
+        "player_input": "What happens if I try to walk from the Spires to the Whispering Glade without equipment?",
+        "expected_lore_facts": {
+            "condition": "The traveler will suffer from 'Aether-Sickness' due to magical pressure variance.",
+            "symptoms": "This causes hallucinations, mana-bleed, and the crystallization of the blood."
+        }
+    },
+    {
+        "player_input": "Is it possible to go back in time and prevent the Disjunction?",
+        "expected_lore_facts": {
+            "law": "The Law of Temporal Rigidity states that physical time travel is impossible.",
+            "limitation": "One can view the past through 'Echoes,' but the Disjunction must be fixed in the present."
+        }
+    },
+    {
+        "player_input": "What is Captain Silas's secret?",
+        "expected_lore_facts": {
+            "true_identity": "He was formerly 'Unit 734' of the Synod of Synthetics.",
+            "hidden_item": "His mechanical eye contains blueprints for a mana-bomb intended to destroy the Whispering Glade."
+        }
+    },
+    {
+        "player_input": "Who or what is 'The Unbound Thread' from the prophecy?",
+        "expected_lore_facts": {
+            "identity": "A prophesied figure who possesses no magical alignment.",
+            "capability": "They are the only one capable of crossing Schisms without a Resonator and reuniting the Ley-Weave."
+        }
+    },
+    {
+        "player_input": "How do I get a Harmonic Resonator for travel?",
+        "expected_lore_facts": {
+            "source": "Resonators are calibrated by the Guild of Wayfarers.",
+            "location": "The Guild can be found at major crossroads between regions."
+        }
+    },
+    {
+        "player_input": "Why are the Aether Crystals disappearing?",
+        "expected_lore_facts": {
+            "synod_theory": "The Synod believes the planet is healing and reabsorbing the mana.",
+            "druid_belief": "The Root-Walkers believe a parasitic entity called the 'Void Eater' is consuming the world's soul."
+        }
+    },
+    {
+        "player_input": "What is the 'Ghost Whale' mentioned by sailors?",
+        "expected_lore_facts": {
+            "nature": "A translucent whale swimming in the skies that manifests lost memories from the Disjunction.",
+            "danger": "Those who attempt to catch it are said to vanish forever."
+        }
+    },
+    {
+        "player_input": "What is the political stance of the Ember-Forged in the Iron Depths?",
+        "expected_lore_facts": {
+            "stance": "They maintain strict neutrality in the war between the Spires and the Glade.",
+            "trade": "They are friendly and rely on exporting refined ore and weapons to survive."
+        }
+    },
+    {
+        "player_input": "Who is Lyra the Whisper-Smith?",
+        "expected_lore_facts": {
+            "role": "An information broker and historian found in the Whispering Glade.",
+            "secret": "She is a 'Living Grimoire' created by the ancients; her death would erase 500 years of history from the world's memory."
+        }
+    },
+    {
+        "player_input": "Can I turn lead into gold using alchemy?",
+        "expected_lore_facts": {
+            "law": "The Law of Equivalence requires an item of equal value to be sacrificed for transmutation.",
+            "cost": "To get gold, you must sacrifice something gold-tier, such as rare gems or years of your life."
+        }
+    },
+    {
+        "player_input": "What makes the Shadow Cloak useful for infiltrating the Neon Spires?",
+        "expected_lore_facts": {
+            "bonus": "It provides a +5 bonus to Stealth checks.",
+            "utility": "It makes the wearer invisible to the thermal vision used by Spires automatons."
+        }
+    },
+    {
+        "player_input": "What does Jax 'The Spark' do in the Iron Depths?",
+        "expected_lore_facts": {
+            "role": "He is a black market augment surgeon and mechanic.",
+            "discovery": "He has found a way to turn 'Corrupted Aether' into a fuel more powerful than standard crystals."
+        }
+    },
+    {
+        "player_input": "If I run out of Aether Crystals, can I still cast spells?",
+        "expected_lore_facts": {
+            "law": "The Law of Conservation of Mana states magic must have a source.",
+            "alternative": "A caster can draw energy from their own life force (HP) if no external source is available."
+        }
+    },
+    {
+        "player_input": "What is the 'Vault of Zero'?",
+        "expected_lore_facts": {
+            "description": "A legendary bunker untouched by the Great Disjunction.",
+            "access": "It is rumored to be opened by the Rusty Key, which bears the emblem of the Old Kingdom."
+        }
+    },
+    {
+        "player_input": "What is a Sunstone used for in combat?",
+        "expected_lore_facts": {
+            "mechanic": "If socketed into a weapon, it deals +1d6 Radiant Damage.",
+            "effectiveness": "It is highly effective against creatures from the Whispering Glade."
+        }
+    }
+]
