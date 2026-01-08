@@ -60,8 +60,9 @@ The project uses the LLM-as-a-Judge method (like the evaluators offered by LangC
 - **Correctness:** Did the LLM get the facts right compred to the benchmark (gold-standard) question/answer dataset?
    - The Judge compares the NPC's response against a hand crafted dataset (`benchmark_data.json`) to check for semantic accuracy.
 
-Metric,Score,Description
-Avg Faithfulness (No Hallucination),0.78,Did the LLM make things up not found in the documents?
-Avg Context Precision (Retrieval),0.59,Did the AI find the right documents?
-Avg Answer Relevance (Coherence),0.86,Did the LLM actually answer the user's question?
-Avg Correctness (Ground Truth),0.75,Did the LLM get the facts right compared to the gold standard?
+| Metric | Score | Description |
+| :--- | :--- | :--- |
+| **Avg Faithfulness (No Hallucination)** | 0.78 | Did the LLM make things up not found in the documents? |
+| **Avg Context Precision (Retrieval)** | 0.59 | Did the AI find the right documents? |
+| **Avg Answer Relevance (Coherence)** | 0.86 | Did the LLM actually answer the user's question? |
+| **Avg Correctness (Ground Truth)** | 0.75 | Did the LLM get the facts right compared to the gold standard? |
