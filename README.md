@@ -1,6 +1,8 @@
 # Aetheria: Elara the NPC
 
-Aetheria is a project demonstrating an AI-powered NPC (Non-Player Character) named Elara, built using LangChain, LangGraph, and LM Studio. The system features a RAG (Retrieval-Augmented Generation) pipeline for lore faithfulness and a sentiment analysis loop for relationship management.
+Aetheria is a project demonstrating an AI-powered NPC (Non-Player Character) named Elara, built using LangChain, LangGraph, and Google Gemini (or local LLMs via LM Studio). The system features a RAG (Retrieval-Augmented Generation) pipeline for lore faithfulness and a sentiment analysis loop for relationship management.
+
+**[Try the Live Demo](https://aetheria.streamlit.app/)**
 
 ## Project Structure
 
@@ -14,9 +16,10 @@ Aetheria is a project demonstrating an AI-powered NPC (Non-Player Character) nam
 
 ## Prerequisites
 
-- Python 3.10+
-- [LM Studio](https://lmstudio.ai/) running with a loaded model (e.g., Llama 3.2 3B).
-- Local server started on port 1234.
+- **Python 3.10+**
+- **LLM Provider** (Choose one):
+    - **Cloud Mode (Recommended for Deployment):** Get a free [Google Gemini API Key](https://aistudio.google.com/app/apikey) and set it as an environment variable `GOOGLE_API_KEY`.
+    - **Local Mode (Recommended for Development):** Install [LM Studio](https://lmstudio.ai/), load a model (e.g., Llama 3.2 3B), and start the local server on port `1234`.
 
 ## Setup
 
@@ -29,6 +32,7 @@ Aetheria is a project demonstrating an AI-powered NPC (Non-Player Character) nam
    ```bash
    python src/database.py
    ```
+   *Note: This processes the markdown files in `world_lore/` and updates the `chroma_db/` folder.*
 
 ## Usage
 
@@ -36,6 +40,7 @@ Aetheria is a project demonstrating an AI-powered NPC (Non-Player Character) nam
 ```bash
 streamlit run app.py
 ```
+The app will automatically detect if you have a `GOOGLE_API_KEY` set. If yes, it uses Gemini. If not, it defaults to looking for your local LM Studio server.
 
 ### Run the Performance Benchmark
 To evaluate the pipeline's accuracy and faithfulness against the 20 test cases:
@@ -46,7 +51,7 @@ This will generate a `benchmark_results.json` file and display the performance s
 
 ## Evaluation Pipeline
 
-The project uses the LLM-as-a-Judge method (like the evaluators offered by LangChain) to grade the NPC's performance. A separate LLM instance acts as an impartial judge, analyzing the interaction to calculate the following four RAG metrics:
+The project uses the LLM-as-a-Judge method to grade the NPC's performance. The `Judge` class uses the same model (Cloud or Local) configured in the environment to perform the audits.
 
 - **Context Precision**: Did the AI find the right documents?
    - The Judge compares the `user input` against the `retrieved documents`.

@@ -18,7 +18,9 @@ class NPCState(TypedDict):
 def npc_logic(state: NPCState):
     user_msg = state['messages'][-1].content
     
+    # Retrieval, queries local ChromaDB for relevant lore (top 2 chunks)
     relevant_lore = vectorstore.similarity_search(user_msg, k=2)
+    # Extracts, turning the list into plain string
     lore_context = "\n".join([d.page_content for d in relevant_lore])
     
     # Roleplay instructions

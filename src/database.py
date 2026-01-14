@@ -5,7 +5,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 import shutil
 import os
 
-# create embeddings (module level is fine)
+# create embeddings
 embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
 def get_vectorstore():
@@ -14,6 +14,7 @@ def get_vectorstore():
         embedding_function=embeddings
     )
 
+# To add more information to the database, run this script directly to rebuild the ChromaDB and then push the new ./chroma_db folder.
 if __name__ == "__main__":
     # load lore documents
     loader = DirectoryLoader('./world_lore/', glob="**/*.md", loader_cls=UnstructuredMarkdownLoader)

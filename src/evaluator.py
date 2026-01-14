@@ -46,7 +46,7 @@ class Judge:
             "reason": "<brief explanation>"
         }}
         """
-        return self._parse_json_output(self.wrapper.llm.invoke(prompt).content)
+        return self._parse_json_output(self.wrapper.llm.invoke(prompt).content) # type: ignore
 
     def evaluate_answer_relevance(self, user_input: str, ai_response: str):
         """
@@ -69,7 +69,7 @@ class Judge:
             "reason": "<brief explanation>"
         }}
         """
-        return self._parse_json_output(self.wrapper.llm.invoke(prompt).content)
+        return self._parse_json_output(self.wrapper.llm.invoke(prompt).content) # type: ignore
 
     def evaluate_faithfulness(self, ai_response: str, context_text: str):
         """
@@ -93,7 +93,7 @@ class Judge:
             "reason": "<List unsupported claims or state 'All supported'>"
         }}
         """
-        return self._parse_json_output(self.wrapper.llm.invoke(prompt).content)
+        return self._parse_json_output(self.wrapper.llm.invoke(prompt).content) # type: ignore
 
     def evaluate_hallucinations(self, ai_response: str, context_text: str):
         """
@@ -136,4 +136,4 @@ class Judge:
             "missing_facts": ["<list of missing fact keys>"]
         }}
         """
-        return self._parse_json_output(self.wrapper.llm.invoke(prompt).content)
+        return self._parse_json_output(self.wrapper.llm.invoke(prompt).content) # type: ignore
