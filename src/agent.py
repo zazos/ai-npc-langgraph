@@ -4,11 +4,11 @@ from langgraph.graph.message import add_messages
 from langchain_core.messages import SystemMessage
 
 from .database import get_vectorstore
-from .langchain_mlstudio import LMStudioWrapper
+from .langchain_mlstudio import AetheriaLLM
 
 
 vectorstore = get_vectorstore() # vector for RAG
-llm_wrapper = LMStudioWrapper()
+llm_wrapper = AetheriaLLM()
 llm = llm_wrapper.llm
 
 class NPCState(TypedDict):

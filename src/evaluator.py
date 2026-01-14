@@ -1,13 +1,12 @@
 import json
 import re
 import ast
-from src.langchain_mlstudio import LMStudioWrapper
+from src.langchain_mlstudio import AetheriaLLM
 
 class Judge:
     def __init__(self):
-        self.wrapper = LMStudioWrapper()
         # Ensure temperature is low for deterministic evaluation
-        self.wrapper.llm.temperature = 0 
+        self.wrapper = AetheriaLLM(temperature=0) 
 
     def _parse_json_output(self, raw_output: str, default_score: float = 0.0):
         """
@@ -95,6 +94,23 @@ class Judge:
         }}
         """
         return self._parse_json_output(self.wrapper.llm.invoke(prompt).content)
+
+    def evaluate_hallucinations(self, ai_response: str, context_text: str):
+        """
+        Wrapper around faithfulness to return hallucination risk score.
+        """
+        result = self.evaluate_faithfulness(ai_response, context_text)
+        # Faithfulness: 1.0 (Good), 0.0 (Bad)
+        # Hallucination Risk: 0.0 (Good), 1.0 (Bad)
+        faithfulness_score = result.get("score", 0.0)
+        
+        # Invert the score
+        hallucination_score = 1.0 - faithfulness_score
+        
+        return {
+            "hallucination_score": round(hallucination_score, 2),
+            "reason": result.get("reason", "No reason provided.")
+        }
 
     def evaluate_correctness(self, ai_response: str, expected_facts: dict):
         """

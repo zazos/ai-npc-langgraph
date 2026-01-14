@@ -81,7 +81,6 @@ def run_benchmark():
         results.append(result_entry)
         
         # Update totals
-        metrics["latency"] += duration
         metrics["context_precision"] += eval_ctx["score"]
         metrics["answer_relevance"] += eval_rel["score"]
         metrics["faithfulness"] += eval_faith["score"]

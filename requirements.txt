@@ -4,7 +4,9 @@ langchain-community
 langchain-core
 langchain-huggingface
 langchain-openai
+langchain-google-genai
 langgraph
 chromadb
 unstructured
 markdown
+pysqlite3-binary

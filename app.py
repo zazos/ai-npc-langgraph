@@ -1,4 +1,13 @@
 import streamlit as st
+
+# Fix for SQLite version on Streamlit Cloud (must be before importing chromadb)
+try:
+    __import__('pysqlite3')
+    import sys
+    sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+except ImportError:
+    pass
+
 import uuid
 from langchain_core.messages import HumanMessage, AIMessage
 from src.agent import npc_app
