@@ -14,7 +14,7 @@ from src.agent import npc_app
 from src.evaluator import Judge
 from src.database import get_vectorstore
 
-st.set_page_config(page_title="Aetheria: Elara", page_icon="🧝‍♀️")
+st.set_page_config(page_title="Aetheria: Elara")
 
 # Initialize session state
 if "thread_id" not in st.session_state:
@@ -42,7 +42,7 @@ with metrics_placeholder.container():
         rel_delta = rel_score - st.session_state.previous_relationship_score
         st.metric("Relationship Score", f"{rel_score}/100", delta=rel_delta)
 
-st.title("🧝‍♀️ Elara - The Wood Elf")
+st.title("Elara - The Wood Elf")
 st.markdown("*A mysterious encounter in the forests of Aetheria...*")
 
 judge = Judge()
@@ -51,16 +51,16 @@ vectorstore = get_vectorstore()
 for message in st.session_state.messages:
     role = "user" if isinstance(message, HumanMessage) else "assistant"
     if role == "assistant":
-        with st.chat_message("assistant", avatar="🧝‍♀️"):
+        with st.chat_message("assistant"):
             st.markdown(message.content)
     else:
-        with st.chat_message(role, avatar="👤"):
+        with st.chat_message(role):
             st.markdown(message.content)
 
 # input from user
 if prompt := st.chat_input("Say something to Elara..."):
     
-    with st.chat_message("user", avatar="👤"):
+    with st.chat_message("user"):
         st.markdown(prompt)
     
     # adds user message to session state (history)
@@ -97,13 +97,13 @@ if prompt := st.chat_input("Say something to Elara..."):
         st.session_state.messages.append(ai_response_msg)
 
     # Display AI response
-    with st.chat_message("assistant", avatar="🧝‍♀️"):
+    with st.chat_message("assistant"):
         st.markdown(ai_response_msg.content)
 
         if audit["hallucination_score"] > 0.4:
-            st.error(f"⚠️ **High Hallucination Risk!** Score: {audit['hallucination_score']}")
+            st.error(f"**[WARNING] High Hallucination Risk!** Score: {audit['hallucination_score']}")
         
-        with st.expander("🔍 View Hallucination Audit Trace"):
+        with st.expander("View Hallucination Audit Trace"):
             st.json(audit)
             
     # Update metrics immediately

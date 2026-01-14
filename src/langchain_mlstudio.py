@@ -13,14 +13,14 @@ class AetheriaLLM:
         api_key = os.getenv("GOOGLE_API_KEY")
         
         if api_key:
-            print("☁️  Detected GOOGLE_API_KEY. Using Google Gemini (Cloud Mode).")
+            print("[CLOUD] Detected GOOGLE_API_KEY. Using Google Gemini (Cloud Mode).")
             self.llm = ChatGoogleGenerativeAI(
-                model="gemini-2.5-flash",
+                model="gemini-1.5-flash",
                 temperature=temperature,
                 google_api_key=api_key
             )
         else:
-            print("💻 No API Key found. Using LM Studio (Local Mode).")
+            print("[LOCAL] No API Key found. Using LM Studio (Local Mode).")
             self.llm = ChatOpenAI(
                 base_url=local_base_url,
                 api_key="lm-studio",
