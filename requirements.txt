@@ -10,3 +10,5 @@ chromadb
 unstructured
 markdown
 pysqlite3-binary
+sentence-transformers
+torch
