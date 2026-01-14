@@ -15,7 +15,7 @@ class AetheriaLLM:
         if api_key:
             print("☁️  Detected GOOGLE_API_KEY. Using Google Gemini (Cloud Mode).")
             self.llm = ChatGoogleGenerativeAI(
-                model="gemini-1.5-flash",
+                model="gemini-2.5-flash",
                 temperature=temperature,
                 google_api_key=api_key
             )

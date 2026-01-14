@@ -9,6 +9,6 @@ langgraph
 chromadb
 unstructured
 markdown
-pysqlite3-binary
+pysqlite3-binary ; sys_platform == 'linux'
 sentence-transformers
 torch
