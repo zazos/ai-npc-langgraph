@@ -23,6 +23,8 @@ if "messages" not in st.session_state:
     st.session_state.messages = []
 if "relationship_score" not in st.session_state:
     st.session_state.relationship_score = 50
+if "previous_relationship_score" not in st.session_state:
+    st.session_state.previous_relationship_score = 50
 if "last_audit" not in st.session_state:
     st.session_state.last_audit = None
 
@@ -36,7 +38,9 @@ with metrics_placeholder.container():
         else:
             st.metric("Hallucination Risk", "N/A")
     with col2:
-        st.metric("Relationship Score", f"{st.session_state.relationship_score}/100")
+        rel_score = st.session_state.relationship_score
+        rel_delta = rel_score - st.session_state.previous_relationship_score
+        st.metric("Relationship Score", f"{rel_score}/100", delta=rel_delta)
 
 st.title("🧝‍♀️ Elara - The Wood Elf")
 st.markdown("*A mysterious encounter in the forests of Aetheria...*")
@@ -74,6 +78,7 @@ if prompt := st.chat_input("Say something to Elara..."):
         
         # update relationship score based on sentiment analysis from the agent
         if "relationship_score" in output:
+            st.session_state.previous_relationship_score = st.session_state.relationship_score
             st.session_state.relationship_score = output["relationship_score"]
         
         # Save score to message metadata for history display
@@ -108,5 +113,7 @@ if prompt := st.chat_input("Say something to Elara..."):
             score = audit['hallucination_score']
             st.metric("Hallucination Risk", f"{score*100:.1f}%", delta=f"-{score*100:.1f}%", delta_color="inverse")
         with col2:
-            st.metric("Relationship Score", f"{st.session_state.relationship_score}/100")
+            rel_score = st.session_state.relationship_score
+            rel_delta = rel_score - st.session_state.previous_relationship_score
+            st.metric("Relationship Score", f"{rel_score}/100", delta=rel_delta)
     # st.rerun() # Removed to prevent clearing the chat response/badge immediately
